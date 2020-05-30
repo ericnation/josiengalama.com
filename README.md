@@ -1,1 +1,1 @@
-wp-content
+This is the home for any modifications to the website for Josien Galama. Parent theme is called Vinero.
