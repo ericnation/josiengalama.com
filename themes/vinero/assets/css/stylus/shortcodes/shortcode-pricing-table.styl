@@ -1,0 +1,70 @@
+ /*!*********************************/
+ /*! Shortcode: Pricing table
+ /**********************************/
+
+.vlt-pricing-table
+	position relative
+	padding 50px 30px
+
+	background-color $c8
+
+	&__featured-flag
+		position absolute
+		top 25px
+		right 25px
+
+		color $c6
+		font-size 150% !important
+
+	&__header
+		margin-bottom 30px
+
+	&__name
+		position relative
+		margin 0 0 30px
+
+		font-size 18px
+		text-transform uppercase
+		letter-spacing 2px
+
+	&__price
+		display block
+
+		line-height 1
+		color $c0
+		> span
+			display inline-block
+
+	&__currecny
+		margin-top 8px
+
+		vertical-align top
+		font-size 22px
+
+	&__amount
+		font-size 48px
+
+	&__period
+		vertical-align bottom
+		font-size 12px
+
+	&__text
+		ul
+			margin 0
+			padding 0
+
+			list-style-type none
+			line-height 2.4
+
+		.vlt-btn
+			margin-top 25px
+
+	&--featured
+		color $c6
+
+		background-color $c0
+		box-shadow none
+
+		.vlt-pricing-table__name,
+		.vlt-pricing-table__price
+			color $c6

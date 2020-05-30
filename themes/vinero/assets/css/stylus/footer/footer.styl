@@ -1,0 +1,112 @@
+/*!*********************************/
+/*! Footer
+/**********************************/
+
+.vlt-footer
+	position relative
+
+	overflow hidden
+	z-index 0
+
+	.vlt-footer__bottom
+		display flex
+		align-items center
+		justify-content space-between
+		padding 30px 0
+		border-top 1px solid rgba($c0, 5%)
+		&-content
+			display flex
+			align-items center
+			justify-content space-between
+			@media (max-width: 767px)
+				display block
+
+				text-align center
+
+
+/*!*********************************/
+/*! Footer logo
+/**********************************/
+
+.vlt-footer__logo
+	@extend .vlt-header__logo
+
+/*!*********************************/
+/*! Footer socials
+/**********************************/
+
+.vlt-footer__socials
+	ul
+		margin 0
+		padding 0
+
+		list-style-type none
+
+	li
+		display inline-block
+		& + li
+			margin-left 15px
+
+	a
+		font-size 14px
+		color $c2
+		&:hover
+			color $c0
+			text-decoration none
+
+/*!*********************************/
+/*! Footer menu
+/**********************************/
+
+.vlt-footer__menu
+	ul
+		margin 0
+		padding 0
+
+		list-style-type none
+
+	li
+		display inline-block
+		margin 0 10px
+
+	a
+		text-transform uppercase
+		font-size 14px
+		color $c2
+		letter-spacing 2px
+
+		&:hover
+			color $c0
+			text-decoration none
+
+/*!*********************************/
+/*! Footer copyright
+/**********************************/
+
+.vlt-footer__copyright
+	margin-bottom 0
+
+	font-size 14px
+	span
+		color $c0
+
+// Fixed Footer
+
+[data-fixed-footer="1"]
+	.vlt-entry-content
+		position relative
+
+		background-color $c6
+		box-shadow 0 10px 20px rgba($c0, 10%)
+		z-index 3
+		@media(max-width: 767px)
+			margin-bottom 0 !important
+
+	.vlt-footer
+		position fixed
+		bottom 0
+		left 0
+		width 100%
+		z-index 2
+		@media(max-width: 767px)
+			position static !important

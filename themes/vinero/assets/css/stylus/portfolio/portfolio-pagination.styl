@@ -1,0 +1,101 @@
+/*!*********************************/
+/*! Portfolio pagination
+/**********************************/
+
+.vp-portfolio__pagination-wrap
+	overflow auto !important
+
+.vp-pagination__style-vinero
+	display flex
+	justify-content center
+	flex-wrap wrap
+	position relative
+	margin-top 100px
+	padding-top 50px
+
+	list-style-type none
+	&::after
+		content: ''
+		display block
+		position absolute
+		top 0
+		left 50%
+		margin-left -15px
+		width 30px
+		height 2px
+
+		background-color $c1
+
+	.vp-pagination__item a
+		outline none
+		text-decoration none
+		text-transform uppercase
+
+	&.vp-pagination__align-left
+		justify-content flex-start
+
+	&.vp-pagination__align-right
+		justify-content flex-end
+
+	.vp-pagination__item
+		flex 0 0 auto
+		margin 0 4px
+		padding 0
+
+		list-style-type none
+		text-align center
+
+	&[data-vp-pagination-type="load-more"],
+	&[data-vp-pagination-type="infinite"]
+		.vp-pagination__item
+			flex auto
+			display block
+			margin 0
+
+			text-transform uppercase
+
+		.vp-pagination__item a i
+			margin-right 5px
+
+		&.vp-pagination__no-more .vp-pagination__item a
+			pointer-events none
+			opacity .8
+
+	&[data-vp-pagination-type="paged"]
+		.vp-pagination__item
+			margin 0 4px
+
+			text-align center
+
+			a,
+			span
+				position relative
+				display inline-block
+				height 40px
+				padding 0 16px
+
+				color $c1
+				line-height 40px
+				letter-spacing 2px
+				font-size 14px
+
+				background-color $c8
+
+			a:hover,
+			span
+				color $c6
+
+				background-color $c1
+
+	// show/hide labels
+	.vp-pagination__load-more .vp-pagination__load-more-no-more,
+	.vp-pagination__load-more .vp-pagination__load-more-loading,
+	.vp-portfolio__loading & .vp-pagination__load-more span,
+	&.vp-pagination__no-more .vp-pagination__load-more span,
+	.vp-portfolio__loading &.vp-pagination__no-more .vp-pagination__load-more .vp-pagination__load-more-no-more
+		display none
+
+	.vp-pagination__load-more span,
+	.vp-portfolio__loading & .vp-pagination__load-more .vp-pagination__load-more-loading,
+	&.vp-pagination__no-more .vp-pagination__load-more .vp-pagination__load-more-no-more
+		display block

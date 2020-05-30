@@ -1,0 +1,66 @@
+/*
+Theme Name: Vinero
+Theme URI: http://wp.vlthemes.com/vinero-multipurpose/
+Author: VLThemes
+Author URI: http://vlthemes.com/
+Description: Vinero is a powerful, flexible, and clean multipurpose portfolio Theme for WordPress. We designed it by focusing on its functionality and ease of use for both sides: the Visitor and the WordPress Admin.
+Version: 2.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: vinero
+Tags: one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, featured-images, full-width-template, theme-options, translation-ready
+*/
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	margin: 0;
+	font-family: 'Arial' , sans-serif;
+	font-size: 14px;
+	color: #757575;
+}
+
+/* WordPress API Elements */
+
+.wp-caption {
+	margin: 30px 0;
+	font-size: 16px;
+	text-align: center;
+	font-style: italic;
+	max-width: 100%;
+}
+
+.wp-caption p,
+.wp-caption-text {
+	margin: 0;
+	margin-top: 5px;
+}
+
+.wp-caption-text,
+.sticky,
+.gallery-caption,
+.bypostauthor,
+.screen-reader-text {
+	visibility: visible;
+}
+
+.screen-reader-text {
+	display: none;
+}
+
+.aligncenter {
+	margin: 30px auto;
+	display: block;
+}
+
+.alignright {
+	margin: 10px 0 10px 30px;
+	float: right;
+}
+
+.alignleft {
+	margin: 10px 30px 10px 0;
+	float: left;
+}

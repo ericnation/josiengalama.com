@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @author: VLThemes
+ * @version: 1.0
+ */
+
+$column_sidebar_class = 'col-md-4';
+$column_content_class = 'col-md-8';
+$column_sidebar_class .= get_theme_mod( 'sticky_sidebar_effect', false ) ? ' vlt-column-sticky-sidebar' : '';
+$column_content_class .= get_theme_mod( 'sticky_sidebar_effect', false ) ? ' vlt-column-sticky-content' : '';
+
+?>
+
+<div class="container">
+	<div class="row">
+
+		<div class="<?php echo vinero_sanitize_class( $column_content_class ); ?>">
+			<?php get_template_part( 'template-parts/single-post/post', 'single-entry' ); ?>
+		</div>
+		<!-- /.col-md-8 -->
+
+		<div class="<?php echo vinero_sanitize_class( $column_sidebar_class ); ?>">
+			<div class="vlt-sidebar vlt-sidebar--right">
+				<?php get_sidebar(); ?>
+			</div>
+		</div>
+		<!-- /.col-md-4 -->
+
+	</div>
+</div>

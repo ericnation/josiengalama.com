@@ -1,0 +1,94 @@
+/*!*********************************/
+/*! Emerge style
+/**********************************/
+
+.vp-portfolio__items-style-emerge
+
+	.vp-portfolio__item
+		background-color transparent
+
+	.vp-portfolio__item a
+		outline none
+		box-shadow none
+
+	.vp-portfolio__item-overlay
+		position absolute
+		padding 15px
+		bottom 0
+		left 0
+		width 100%
+		max-height 50%
+
+	.vp-portfolio__item-img img
+		transition()
+
+	.vp-portfolio__item-overlay
+		transform translateY(100%)
+		transition()
+
+	.vp-portfolio__item:hover
+		.vp-portfolio__item-img img
+			transform scale(1.1)
+
+		.vp-portfolio__item-overlay
+			transform translateY(0)
+
+	.vp-portfolio__item-meta
+		* + *
+			margin-top 5px
+
+	.vp-portfolio__item-meta-title
+		margin 0
+
+		font-size 18px
+		text-transform uppercase
+		letter-spacing 2px
+
+	.vp-portfolio__item-meta-date
+		font-size 12px
+		text-transform uppercase
+		letter-spacing 2px
+		line-height 1.5
+
+	.vp-portfolio__item-meta-categories
+		position absolute
+		display flex
+		flex-wrap wrap
+		left 0
+		top 0
+		margin 0
+		padding 30px
+
+		list-style-type none
+
+		.vp-portfolio__item-meta-category + .vp-portfolio__item-meta-category
+			margin-left 6px
+
+		.vp-portfolio__item-meta-category
+			margin 0
+			padding 0
+			a
+				display block
+				padding 6px 20px
+
+				color $c0
+				text-transform uppercase
+				letter-spacing 2px
+				font-size 12px
+
+				background-color $c6
+
+	.vp-portfolio__item-align-left
+		text-align left
+
+	.vp-portfolio__item-align-center
+		text-align center
+
+		.vp-portfolio__item-meta-categories
+			justify-content center
+
+	.vp-portfolio__item-align-right
+		text-align right
+
+		.vp-portfolio__item-meta-categories
+			justify-content flex-end

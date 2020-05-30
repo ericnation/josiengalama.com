@@ -1,0 +1,63 @@
+/*!*********************************/
+/*! Plugin: Tooltipster
+/**********************************/
+
+.tooltipster-sidetip
+	&.tooltipster-noir
+		.tooltipster-box
+			border-radius 0
+			border none
+			background-color $c0
+
+		.tooltipster-content
+			color $c6
+			font-size 10px
+			text-transform uppercase
+			letter-spacing 2px
+
+		.tooltipster-arrow
+			height 11px
+			margin-left -11px
+			width 22px
+
+		.tooltipster-arrow-background
+			border 11px solid transparent
+
+		&.tooltipster-bottom
+			.tooltipster-arrow-background
+				top 4px
+
+				border-bottom-color $c0
+
+			.tooltipster-arrow-uncropped
+				top -11px
+
+		&.tooltipster-left
+			.tooltipster-arrow-background
+				border-left-color $c0
+				left -4px
+		&.tooltipster-right
+			.tooltipster-arrow-background
+				left 4px
+
+				border-right-color $c0
+
+			.tooltipster-arrow-uncropped
+				left -11px
+
+		&.tooltipster-top
+			.tooltipster-arrow-background
+				top -4px
+
+				border-top-color $c0
+
+		.tooltipster-arrow-border
+			border-width 11px
+			border none
+
+.tooltipster-sidetip.tooltipster-noir.tooltipster-left .tooltipster-arrow,
+.tooltipster-sidetip.tooltipster-noir.tooltipster-right .tooltipster-arrow
+	height 22px
+	margin-left 0
+	margin-top -11px
+	width 11px

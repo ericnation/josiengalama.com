@@ -1,0 +1,101 @@
+/*!*********************************/
+/*! Post style single
+/**********************************/
+
+.vlt-post--style-single
+
+	.vlt-post-thumbnail + .vlt-post-content
+		padding-top 25px
+
+	.vlt-post-content
+
+		header
+			margin-bottom 15px
+
+		.vlt-post-title
+			font-size 24px
+
+		.vlt-post-meta
+			margin-top 15px
+
+		.vlt-post-entry-content
+			margin-top 20px
+
+		footer
+			margin-top 30px
+
+			.vlt-post-share,
+			.vlt-post-tags
+				h5
+					position relative
+					margin 0 0 25px
+					padding-bottom 10px
+
+					text-transform uppercase
+					&::before
+						content ''
+						position absolute
+						bottom 0
+						left 0
+						width 30px
+						height 1px
+						background-color $c11
+
+			.vlt-post-tags
+				@extend .vlt-widget.widget_tag_cloud
+
+			.vlt-post-share + .vlt-post-tags
+				margin-top 30px
+
+/*!*********************************/
+/*! Also like posts
+/**********************************/
+
+.vlt-post-also-like-posts
+	margin-top 50px
+
+	h4
+		margin 0 0 30px
+
+/*!*********************************/
+/*! About author
+/**********************************/
+
+.vlt-post-about-author
+	margin-top 50px
+
+	h4
+		margin 0 0 30px
+
+	&__avatar
+		float left
+
+		line-height 0
+
+	&__content
+		min-height 70px
+		padding-left 95px
+
+		p
+			margin-bottom 0
+
+		ul
+			margin 10px 0 0
+			padding 0
+
+			list-style-type none
+
+			li
+				float left
+				margin-right 10px
+
+			a
+				color $c0
+				font-size 13px
+
+/*!*********************************/
+/*! After post shortcode
+/**********************************/
+
+.vlt-after-post-shortcode
+	margin-top 50px

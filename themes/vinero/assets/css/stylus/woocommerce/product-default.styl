@@ -1,0 +1,88 @@
+/*!*********************************/
+/*! Product style default
+/**********************************/
+
+.vlt-product--style-default
+
+	.vlt-product-thumbnail
+		position relative
+
+		text-align center
+		font-size 0
+
+		&__secondary
+			position absolute
+			top 0
+			left 0
+			width 100%
+			height 100%
+
+			opacity 0
+			z-index 1
+			background-size cover
+			background-position center center
+			transition()
+
+		&__link
+			position absolute
+			top 0
+			left 0
+			width 100%
+			height 100%
+
+			z-index 2
+
+		&:hover
+
+			.vlt-product-thumbnail__secondary
+				opacity 1
+
+	.vlt-product-content
+		position relative
+		padding 20px 0 0
+
+		.vlt-product-title
+			margin 0
+
+			font-size 18px
+			line-height 1.4
+			color $c0
+
+		.vlt-product-price
+			margin-top 5px
+			del
+				color $c3
+
+			ins
+				text-decoration none
+
+		.vlt-add-to-cart-button
+			display flex
+			align-items center
+			justify-content center
+			position absolute
+			bottom 0
+			right 0
+			height 26px
+			width 26px
+
+			color $c6
+
+			background-color $c0
+			&:hover
+				color $c6
+
+				background-color $c1
+
+			&.added
+				.icofont::before
+					content '\efab'
+
+			&.loading
+				.icofont
+					animation icofont-rotate 2s infinite linear
+					&::before
+						content '\f0e0'
+
+		.added_to_cart
+			display none

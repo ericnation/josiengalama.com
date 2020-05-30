@@ -1,0 +1,77 @@
+/*!*********************************/
+/*! Site content
+/**********************************/
+
+body
+	margin 0
+	padding 0
+	min-width 320px
+
+.container
+	width 100%
+
+.vlt-entry-site
+	overflow hidden
+	background-color $c6
+
+	&.vlt-entry-site--boxed
+		margin 0 auto
+		box-shadow 0 0 15px rgba($c0, 10%)
+
+	&.vlt-entry-site--grayscale img
+		filter grayscale(100%)
+
+.vlt-main--padding
+	padding-top 80px
+	padding-bottom 80px
+
+.vlt-content-protected
+	display flex
+	align-items center
+	justify-content center
+	padding 80px 0
+	min-height 80vh
+
+.vlt-content-markup
+
+	p a:hover
+		text-decoration underline
+
+	ul,
+	ol
+		padding-left 20px
+		ul,
+		ol
+			margin-bottom 0
+
+	> ul, ol
+		margin-bottom 30px
+
+	h1, .h1,
+	h2, .h2,
+	h3, .h3,
+	h4, .h4,
+	h5, .h5,
+	h6, .h6
+		margin 10px 0 15px
+
+.vc_col-has-fill > .vc_column-inner,
+.vc_row-has-fill + .vc_row-full-width + .vc_row > .vc_column_container > .vc_column-inner,
+.vc_row-has-fill + .vc_row > .vc_column_container > .vc_column-inner,
+.vc_row-has-fill + .vc_vc_row > .vc_row > .vc_vc_column > .vc_column_container > .vc_column-inner,
+.vc_row-has-fill + .vc_vc_row_inner > .vc_row > .vc_vc_column_inner > .vc_column_container > .vc_column-inner,
+.vc_row-has-fill > .vc_column_container > .vc_column-inner, .vc_row-has-fill > .vc_row > .vc_vc_column > .vc_column_container > .vc_column-inner,
+.vc_row-has-fill > .vc_vc_column_inner > .vc_column_container > .vc_column-inner,
+.vc_section.vc_section-has-fill,
+.vc_section.vc_section-has-fill + .vc_row-full-width + .vc_section,
+.vc_section.vc_section-has-fill + .vc_section
+	padding-top 0 !important
+
+.vc_row.vc_column-gap-30  >  .vc_column_container
+	padding 0 15px !important
+
+.clearfix
+	&::after
+		content ''
+		display block
+		clear both

@@ -1,0 +1,30 @@
+.sass-cache
+.DS_Store
+.thumbsdb
+.svn
+db.php
+debug.log
+.idea
+
+mu-plugins/*
+plugins/*
+
+# Ignore themes we don't need
+themes/twentyfourteen
+themes/twentyfifteen
+themes/twentysixteen
+themes/twentyseventeen
+themes/twentytwenty
+themes/storefront
+
+# Ignore composer installed files
+vendor/*
+
+uploads/
+upgrade/
+
+*node_modules
+
+*.vscode
+
+fonts/*

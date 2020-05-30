@@ -1,0 +1,68 @@
+/*!*********************************/
+/*! Default style
+/**********************************/
+
+.vp-portfolio__items-style-default
+
+	.vp-portfolio__item
+		background-color transparent
+
+	.vp-portfolio__item a
+		outline none
+		box-shadow none
+
+	.vp-portfolio__item-meta
+		position relative
+		padding 15px 0 0
+		* + *
+			margin-top 5px
+
+	.vp-portfolio__item-meta-title
+		margin 0
+
+		font-size 18px
+		text-transform uppercase
+		letter-spacing 2px
+
+	.vp-portfolio__item-meta-date
+		font-size 12px
+		text-transform uppercase
+		letter-spacing 2px
+		line-height 1.5
+
+	.vp-portfolio__item-meta-categories
+		position absolute
+		display flex
+		flex-wrap wrap
+		left 0
+		bottom 100%
+		margin 0
+		padding 20px
+
+		list-style-type none
+
+		.vp-portfolio__item-meta-category + .vp-portfolio__item-meta-category
+			margin-left 6px
+
+		.vp-portfolio__item-meta-category
+			margin 0
+			padding 0
+			a
+				display block
+				padding 6px 20px
+
+				color $c0
+				text-transform uppercase
+				letter-spacing 2px
+				font-size 12px
+
+				background-color $c6
+
+	.vp-portfolio__item-align-left
+		text-align left
+
+	.vp-portfolio__item-align-center
+		text-align center
+
+	.vp-portfolio__item-align-right
+		text-align right

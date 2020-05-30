@@ -1,0 +1,78 @@
+/*!*********************************/
+/*! Shortcode: Buttons
+/**********************************/
+
+.vlt-btn
+	position relative
+	display inline-block
+	padding 17px 44px
+
+	outline 0
+	text-decoration none
+	text-align center
+
+	cursor pointer
+	border none
+	border-radius 0
+	transition()
+
+	&:disabled
+		pointer-events none
+		cursor not-allowed
+
+	i
+		margin-left 5px
+
+.vlt-btn--primary
+	color $c6
+
+	background-color $c0
+
+	&:hover
+		color $c6
+
+		background-color $c1
+
+	&.vlt-btn--inverse
+		color $c0
+
+		background-color $c6
+		&:hover
+			color $c0
+
+			background-color $c8
+
+.vlt-btn--secondary
+	color $c0
+
+	box-shadow inset 0 0 0 2px $c0
+	background-color transparent
+
+	&:hover
+		color $c6
+
+		background-color $c0
+
+	&.vlt-btn--inverse
+		color $c6
+
+		box-shadow inset 0 0 0 2px $c6
+		background-color transparent
+
+		&:hover
+			color $c0
+
+			background-color $c8
+			box-shadow inset 0 0 0 2px $c8
+
+.vlt-btn--rounded
+	border-radius 100px
+
+.vlt-btn--lg
+	padding 22px 58px
+
+.vlt-btn--sm
+	padding 13px 32px
+
+.vlt-btn--xs
+	padding 10px 26px

@@ -1,0 +1,396 @@
+/*!*********************************/
+/*! Cart Icon
+/**********************************/
+
+.vlt-cart-icon
+	display flex
+	align-items center
+	justify-content center
+	position fixed
+	top 80px
+	right 0
+	height 34px
+	width 34px
+
+	color $c6
+
+	z-index 5
+	background-color $c0
+
+/*!*********************************/
+/*! UI Loader
+/**********************************/
+
+.blockUI.blockOverlay,
+.loader
+	opacity 1 !important
+	background-color rgba($c0, 25%) !important
+
+.blockUI.blockOverlay::before,
+.loader::before
+	content '\f0e0' !important
+	display flex
+	align-items center
+	justify-content center
+	position absolute
+	top calc(50% - 15px)
+	left calc(50% - 15px)
+	height 30px
+	width 30px
+
+	font-size 18px
+	color $c6 !important
+	font-family $if
+
+	background none !important
+	animation icofont-rotate 2s infinite linear !important
+
+/*!*********************************/
+/*! Store notice
+/**********************************/
+
+.woocommerce-store-notice.demo_store
+	padding 10px 15px
+	margin 0
+
+	color $c6
+	font-size 11px
+	text-align center
+	text-transform uppercase
+	letter-spacing 1px
+
+	background-color $c0
+
+	a:hover
+		text-decoration underline
+
+/*!*********************************/
+/*! WooCommerce 3.0 Gallery
+/**********************************/
+
+.woocommerce-product-gallery
+	position relative
+	margin-bottom 30px
+	figure
+		margin 0
+
+.woocommerce-product-gallery__image:nth-child(n+2)
+	display inline-block
+	width 25%
+
+.woocommerce-product-gallery .flex-control-thumbs
+	margin-top 8px
+
+	display grid
+	grid-gap 8px
+
+	list-style-type none
+
+.woocommerce-product-gallery .flex-control-thumbs img
+	border 2px solid transparent
+	transition()
+	&.flex-active
+		background-color $c8
+
+.woocommerce-product-gallery .flex-control-thumbs img:hover
+	opacity .8
+
+.woocommerce-product-gallery img
+	display block
+
+.woocommerce-product-gallery--columns-3 .flex-control-thumbs
+	grid-template-columns repeat(3, 2fr)
+
+.woocommerce-product-gallery--columns-4 .flex-control-thumbs
+	grid-template-columns repeat(4, 2fr)
+
+.woocommerce-product-gallery--columns-5 .flex-control-thumbs
+	grid-template-columns repeat(5, 2fr)
+
+/*!*********************************/
+/*! Onsale badge
+/**********************************/
+
+.vlt-onsale
+	display inline-flex
+	align-items center
+	justify-content center
+	position absolute
+	top 15px
+	left 15px
+	height 26px
+	padding 0 8px 0 10px
+
+	font-size 12px
+	color $c6
+	text-transform uppercase
+	letter-spacing 2px
+
+	z-index 1
+	pointer-events none
+
+/*!*********************************/
+/*! Loop Header
+/**********************************/
+
+.vlt-shop-loop-header
+	display flex
+	align-items center
+	justify-content space-between
+	margin-bottom 35px
+
+	font-size 14px
+	color $c0
+	@media (max-width: 575px)
+		display none
+
+	.woocommerce-result-count
+		margin 0
+
+		font-size 15px
+
+	.woocommerce-ordering
+		select
+			letter-spacing 0
+			font-size 14px
+
+/*!*********************************/
+/*! Star ratings
+/**********************************/
+
+.star-rating
+	display inline-block
+	overflow hidden
+	position relative
+	width 5em
+
+	letter-spacing 1px
+
+	&::before
+		content '\f006\f006\f006\f006\f006'
+		position relative
+
+		font-family $fa
+		color $c11
+
+	span
+		overflow hidden
+		float left
+		top 0
+		left 0
+		position absolute
+		padding-top 2em
+
+		&::before
+			content '\f005\f005\f005\f005\f005'
+			position absolute
+			top 0
+			left 0
+
+			font-family $fa
+
+/*!*********************************/
+/*! Notifications
+/**********************************/
+
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message
+	@extend .vlt-alert
+
+	margin 0 0 30px !important
+	padding 15px 30px 15px 50px !important
+
+	&::before
+		content '\f028'
+		display block
+		position absolute
+		top auto
+		left 20px
+
+		font-family $if
+
+	a,
+	.button
+		float right
+
+		text-decoration underline
+		&:hover
+			text-decoration none
+
+/*!*********************************/
+/*! Quantity
+/**********************************/
+
+.vlt-quantity
+	display inline-flex
+
+	.qty
+		width 50px !important
+		padding 10px 0
+
+		text-align center
+
+		border none
+		border-radius 0
+		background-color $c8
+
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button
+			appearance none
+
+	button
+		display block
+		margin 0
+		padding 0 8px
+
+		color $c6
+		text-align center
+
+		cursor pointer
+		border none
+		background-color $c0
+		transition()
+		&:hover
+			color $c6
+
+			background-color $c1
+
+/*!*********************************/
+/*! Cross Sells, Related, Up Sells
+/**********************************/
+
+.vlt-cross-sells-products,
+.vlt-related-products,
+.vlt-up-sells-products
+	margin-top 50px
+
+	&__title
+		margin 0 0 20px !important
+
+	.vlt-product
+		@media (max-width: 767px)
+			margin-bottom 30px
+
+/**********************************/
+/* Shop title
+/**********************************/
+
+.vlt-shop-title
+	margin 0 0 20px !important
+	a
+		margin-left 10px
+
+		font-size 50%
+
+/*!*********************************/
+/*! Select Woo
+/**********************************/
+
+.select2-container .select2-selection--single
+	height auto
+
+.select2-container .select2-selection--single .select2-selection__rendered
+	padding 6px 30px 6px 15px
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+	height 100%
+	b
+		margin-left -15px
+
+.select2-results__option
+	padding 6px 15px
+
+.select2-container--default .select2-selection--single
+	border-radius 0
+
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option--highlighted[data-selected]
+	color $c6
+
+	background-color $c0
+
+.select2-container--default .select2-results__option[aria-selected=true],
+.select2-container--default .select2-results__option[data-selected=true]
+	color $c6
+
+	background-color $c0
+
+.select2-search--dropdown
+	padding 6px 15px
+
+.select2-container--default .select2-search--dropdown .select2-search__field,
+.select2-container--default .select2-selection--single,
+.select2-dropdown
+	border-color $c9
+
+/*!*********************************/
+/*! Coupon general
+/**********************************/
+
+.vlt-checkout-coupon
+	max-width 320px
+	margin 30px 0
+
+/*!*********************************/
+/*! Form Login / Register
+/**********************************/
+
+.vlt-woocommerce-form-login
+	max-width 420px
+	margin 30px 0
+	padding 30px
+
+	border 1px solid $c9
+	box-shadow 0px 1px 3px 0px rgba($c0, 10%)
+
+.vlt-form-login-wrap,
+.vlt-form-register-wrap,
+.vlt-lost-password-wrap,
+.vlt-reset-password-wrap
+	max-width 420px
+	margin 0 auto
+	padding 50px 0
+
+	h1
+		margin 0 0 30px
+
+		text-align center
+
+	.vlt-form-login,
+	.vlt-form-register,
+	.vlt-lost-password,
+	.vlt-reset-password
+		padding 30px
+
+		border 1px solid $c9
+		box-shadow 0px 1px 3px 0px rgba($c0, 10%)
+
+		.lost_password
+			float right
+			margin 0
+
+			font-size 14px
+			&:hover
+				text-decoration underline
+
+	.vlt-form-login-divider,
+	.vlt-form-register-divider
+		display flex
+		flex-direction row
+		align-items center
+		padding 20px 0
+
+		color $c0
+		font-size 14px
+		span:not(.text)
+			flex 1
+			height 1px
+			background-color $c8
+
+		.text
+			padding 0 15px
+
+.vlt-form-edit-account
+	h4
+		margin 15px 0 30px

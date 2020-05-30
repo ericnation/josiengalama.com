@@ -1,0 +1,72 @@
+/*!*********************************/
+/*! Team member
+/**********************************/
+
+.vlt-team-member
+	position relative
+
+	&__avatar
+		position relative
+		font-size 0
+
+
+	&__info
+		padding 20px 0 0
+
+		letter-spacing 2px
+		text-align center
+
+	&__name
+		margin 0
+
+		font-size 18px
+		text-transform uppercase
+
+	&__function
+		margin 5px 0 0
+
+		font-size 14px
+		color $c10
+		text-transform uppercase
+
+	&__links
+		display flex
+		align-items center
+		justify-content center
+		position absolute
+		width 100%
+		height 100%
+		top 0
+		left 0
+
+		opacity 0
+		visibility hidden
+		transition()
+		background-color rgba(#000, 80%)
+
+		a
+
+			opacity 0
+			transform translateY(100%)
+
+		a + a
+			margin-left 6px
+
+	&:hover
+		.vlt-team-member__links
+			opacity 1
+			visibility visible
+			delay = 80
+
+			for num in (1..8)
+				a:nth-of-type({num})
+					animation animate_social_link 500ms (delay)ms linear forwards
+				delay += 80
+
+@keyframes animate_social_link
+	0%
+		opacity 0
+		transform translateY(100%)
+	100%
+		opacity 1
+		transform translateY(0)

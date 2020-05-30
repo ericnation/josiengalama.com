@@ -1,0 +1,167 @@
+/*!*********************************/
+/*! Cart
+/**********************************/
+
+.vlt-woocommerce-cart-form-wrap
+	padding-right 10px
+	@media (max-width: 767px)
+		padding-right 0
+
+.vlt-cart-table
+
+	&__footer
+		display flex
+		align-items center
+		justify-content space-between
+		margin-top 30px
+		padding-top 30px
+
+		border-top 1px solid $c9
+
+	&__product
+		display flex
+		align-items center
+		justify-content space-between
+		position relative
+
+	.vlt-product-subtotal
+		font-size 20px
+
+	.vlt-product-content
+		display -webkit-flex
+		display -ms-flex
+		display flex
+		align-items center
+
+		.vlt-product-thumbnail
+			display inline-block
+			position relative
+			margin-right 30px
+
+			line-height 0
+
+			img
+				width 74px
+
+			a.remove
+				display flex
+				align-items center
+				justify-content center
+				position absolute
+				top 0
+				left 0
+				height 100%
+				width 100%
+
+				font-size 24px
+				color $c6
+
+				visibility hidden
+				opacity 0
+				background-color rgba($c0, 25%)
+
+			&:hover a.remove
+				opacity 1
+				visibility visible
+
+		.vlt-product-info
+
+			h5
+				margin 0 0 10px
+
+			.backorder_notification
+				margin-bottom 0
+
+			.vlt-quantity .qty
+				padding 6px 0
+
+.vlt-cart-table__product + .vlt-cart-table__product
+	margin-top 25px
+	padding-top 25px
+
+	border-top 1px solid $c9
+
+/*!*********************************/
+/*! Cart Sidebar
+/**********************************/
+
+.vlt-toggle-tab
+	margin-bottom 20px
+	padding 15px 20px
+
+	background-color $c6
+	border 1px solid $c9
+
+	&__header
+		a
+			display block
+
+			color $c0
+			font-size 15px
+
+			&::after
+				content '\eb5a'
+				float right
+
+				font-family $if
+
+	&__content
+		display none
+
+
+		.vlt-coupon-code
+			margin-top 15px
+
+			.vlt-form-group
+				padding 15px 0
+
+			.vlt-btn
+				margin-bottom 15px
+
+.vlt-woocommerce-shipping-calculator
+	margin-top 15px
+
+	text-align left
+
+	.vlt-form-group
+		padding-bottom 15px
+
+	.vlt-btn
+		margin-bottom 15px
+
+/*!*********************************/
+/*! Cart collaterals
+/**********************************/
+
+.vlt-cart-collaterals
+	@media (max-width: 767px)
+		margin-top 50px
+
+	.vlt-cart-totals
+		border-radius 5px
+		table
+			margin-bottom 20px
+
+			tr th,
+			tr td
+				padding 5px 0
+				border none
+
+			tr
+				background none !important
+
+			tr th
+				font-weight normal
+				color $c0
+				font-weight 600
+
+				background none
+
+			tr + tr
+				margin-top 8px
+
+			tr td
+				text-align right
+
+				strong
+					font-weight normal

@@ -1,0 +1,50 @@
+/*!*********************************/
+/*! Fancybox
+/**********************************/
+
+.fancybox-caption
+	padding 25px 15px
+
+	letter-spacing 2px
+	font-size 14px
+	text-transform uppercase
+	color $c6
+	font-weight normal
+	text-align center
+	&::after,
+	&::before
+		display none
+
+.fancybox-bg
+	background-color #000
+
+.fancybox-is-open .fancybox-bg
+	opacity .9
+
+.fancybox-navigation .fancybox-button--arrow_left
+	left 15px
+
+.fancybox-navigation .fancybox-button--arrow_right
+	right 15px
+
+.fancybox-button
+	color $c6 !important
+
+	transition()
+	&:hover
+		color $c6
+
+.fancybox-infobar
+	padding 0 15px
+
+	letter-spacing 2px
+	font-size 12px
+	text-transform uppercase
+	color $c6
+	font-weight normal
+
+.fancybox-button.disabled,
+.fancybox-button.disabled:hover,
+.fancybox-button[disabled],
+.fancybox-button[disabled]:hover
+	color $c6

@@ -1,0 +1,218 @@
+/*!*********************************/
+/*! Extend widgets
+/**********************************/
+
+.vlt-widget.widget_layered_nav,
+.vlt-widget.widget_product_categories,
+.vlt-widget.widget_rating_filter
+	@extend .vlt-widget.widget_nav_menu
+
+.vlt-widget.widget_product_tag_cloud
+	@extend .vlt-widget.widget_tag_cloud
+
+/*!*********************************/
+/*! Rating filter
+/**********************************/
+
+.widget_rating_filter
+	a:hover
+		color $c0
+
+/*!*********************************/
+/*! Mini cart
+/**********************************/
+
+.vlt-widget.widget_shopping_cart
+	@extend .clearfix
+
+	ul
+		padding-bottom 20px
+		margin-bottom 25px
+
+		border-bottom 1px solid $c9
+
+	li
+		position relative
+		min-height 63px
+		& + li
+			margin-top 20px
+
+	a
+		font-size 18px
+		letter-spacing 1px
+		color $c0
+		text-transform uppercase
+
+		img
+			float right
+			width 63px
+
+	p
+		margin-bottom 0
+
+	.quantity
+		display block
+		margin-top 5px
+
+	.remove
+		display flex
+		align-items center
+		justify-content center
+		position absolute
+		top calc(50% - 10px)
+		right 77px
+		height 20px
+		width 20px
+
+		font-size 18px
+
+	.total
+		float left
+		margin 0
+		padding-top 5px
+		strong
+			color $c0
+
+	.buttons
+		float right
+		margin 0
+
+		a
+			@extend .vlt-btn
+			@extend .vlt-btn--primary
+
+			padding 5px 10px
+			font-weight normal
+
+			letter-spacing 1px
+
+			text-transform uppercase
+			font-size 12px
+
+		a + a
+			margin-left 5px
+
+/*!*********************************/
+/*! UI Price filter
+/**********************************/
+
+.vlt-widget.widget_price_filter
+
+	.price_slider
+		margin-bottom 25px
+
+	.price_slider_amount
+		display flex
+		align-items center
+		justify-content space-between
+		flex-direction row-reverse
+
+		font-size 14px
+
+		.button
+			@extend .vlt-btn
+			@extend .vlt-btn--primary
+
+			padding 5px 10px
+
+			letter-spacing 1px
+			text-transform uppercase
+			font-size 13px
+
+		.clear
+			display none
+
+	.ui-slider
+		position relative
+		margin-left 0.5em
+		margin-right 0.5em
+		text-align left
+
+		.ui-slider-handle
+			position absolute
+			width 12px
+			height 12px
+			top -4px
+			margin-left -8px
+
+			cursor ew-resize
+			outline none
+
+			z-index 2
+			background-color $c0
+
+		.ui-slider-range
+			display block
+			position absolute
+			z-index 1
+
+			border none
+			background-color $c0
+
+	.price_slider_wrapper
+		.ui-widget-content
+			background-color $c8
+
+	.ui-slider-horizontal
+		height 4px
+
+		.ui-slider-range
+			top 0
+			height 100%
+
+		.ui-slider-range-min
+			left -1px
+
+		.ui-slider-range-max
+			right -1px
+
+/*!*********************************/
+/*! Product list
+/**********************************/
+
+.vlt-widget.widget_recent_reviews,
+.vlt-widget.widget_top_rated_products,
+.vlt-widget.widget_products,
+.vlt-widget.widget_recently_viewed_products
+	ul
+		li
+			min-height 91px
+			& + li
+				margin-top 20px
+
+		img
+			width 91px
+			float left
+			margin-right 15px
+
+		.star-rating
+			margin 5px 0 0
+
+			line-height 1
+
+		.vlt-product-price,
+		.reviewer
+			margin 0
+			del
+				color $c3
+			ins
+				text-decoration none
+
+		.vlt-product-title,
+		span.product-title
+			margin 0
+
+			color $c0
+			letter-spacing 1px
+			font-size 18px
+
+		.vlt-product-content
+			min-height 91px
+
+/*!*********************************/
+/*! Product list
+/**********************************/
+
+.vlt-widget.widget_recent_reviews
+	span
+		display block

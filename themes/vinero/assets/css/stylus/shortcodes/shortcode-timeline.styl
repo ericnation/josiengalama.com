@@ -1,0 +1,135 @@
+/*!*********************************/
+/*! Shortcode: Timeline
+/**********************************/
+
+.vlt-timeline
+	position relative
+	padding 30px 0
+
+	list-style-type none
+	&::before
+		content ''
+		position absolute
+		top 0
+		left 50%
+		bottom 0
+		width 2px
+		margin-left -1px
+
+		background-color $c8
+
+	> li
+		margin-bottom 40px
+		&:last-child
+			margin-bottom 0
+
+	> li
+		position relative
+
+		.vlt-timeline-panel
+			position relative
+			float left
+			width calc(50% - 40px)
+			padding 30px
+
+			text-align right
+
+			background-color $c6
+			border 1px solid $c8
+
+			cursor pointer
+			&::before
+				content ''
+				display inline-block
+				position absolute
+				top 30px
+				right -10px
+				width 0
+				height 0
+				border-top 10px solid transparent
+				border-left 10px solid $c8
+				border-right 0 solid $c8
+				border-bottom 10px solid transparent
+
+			&::after
+				content ''
+				display block
+				position absolute
+				left calc(100% + 37px)
+				top 36px
+				width 8px
+				height 8px
+
+				z-index 12
+				background-color $c8
+				border-radius 50%
+				transition()
+
+			&__date
+				display inline-block
+				padding 6px 10px 6px 12px
+				margin-bottom 15px
+
+
+				font-size 12px
+				letter-spacing 2px
+				text-transform uppercase
+				color $c0
+				line-height 1
+
+				border-radius 2px
+				background-color $c8
+
+			&__title
+				margin 0 0 15px
+
+		&:nth-child(2n)
+			.vlt-timeline-panel
+				float right
+
+				text-align left
+
+				&::before
+					left -10px
+					right auto
+
+					border-left-width 0
+					border-right-width 10px
+
+				&::after
+					left auto
+					right calc(100% + 37px)
+
+.vlt-timeline-panel:hover
+	.vlt-timeline-panel__date
+		color $c6
+
+@media (max-width: 767px)
+
+	.vlt-timeline
+		&::before
+			left 4px
+
+		> li
+			.vlt-timeline-panel::after
+				left auto
+				right calc(100% + 33px)
+
+			&:nth-child(2n)
+				.vlt-timeline-panel
+					float right
+					&::after
+						right calc(100% + 33px)
+
+			.vlt-timeline-panel
+				float right
+				width calc(100% - 40px)
+
+				text-align left
+
+				&::before
+					left -10px
+					right auto
+
+					border-left-width 0
+					border-right-width 10px

@@ -1,0 +1,52 @@
+{
+    "key": "group_59bf68448d7d6",
+    "title": "[Post] Single Post",
+    "fields": [
+        {
+            "key": "field_59c916e1212e4",
+            "label": "Sidebar Position",
+            "name": "post_sidebar_position",
+            "type": "select",
+            "instructions": "Enter position of the sidebar for this post",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "fullwidth": "Full Width",
+                "left-sidebar": "Left Sidebar",
+                "right-sidebar": "Right Sidebar"
+            },
+            "default_value": [
+                "right-sidebar"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1530443276
+}

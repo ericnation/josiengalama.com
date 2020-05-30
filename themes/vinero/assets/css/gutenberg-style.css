@@ -1,0 +1,98 @@
+.wp-block-code,
+.wp-block-preformatted pre,
+.wp-block-verse pre,
+pre.wp-block-verse {
+    padding: 15px 30px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f2f2f2;
+}
+
+.wp-block-code::after,
+.wp-block-preformatted pre::after,
+.wp-block-verse pre::after,
+pre.wp-block-verse::after {
+    content: '\eea3';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    padding: 2px 0 0 0;
+    font-size: 12px;
+    color: #fff;
+    font-family: icofont;
+    text-align: center;
+    background-color: #474747;
+}
+
+.wp-block-quote:not(.is-large):not(.is-style-large) p {
+    font-size: 26px;
+    line-height: 1.5;
+}
+
+.wp-block-pullquote {
+    padding: 30px 0;
+    border: none;
+}
+
+.wp-block-pullquote blockquote {
+    margin: 0;
+}
+
+.wp-block-quote__citation,
+.wp-block-pullquote cite,
+.wp-block-pullquote footer,
+.wp-block-pullquote__citation,
+.wp-block-pullquote.is-style-solid-color .wp-block-pullquote__citation {
+    color: #333;
+    font-size: 12px;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.wp-block-quote__citation::before,
+.wp-block-pullquote cite::before,
+.wp-block-pullquote footer::before,
+.wp-block-pullquote__citation::before,
+.wp-block-pullquote.is-style-solid-color .wp-block-pullquote__citation::before {
+    content: '\2014';
+    padding-right: 10px;
+}
+
+.wp-block-quote.is-large {
+    padding: 0;
+}
+
+.wp-block-quote.is-large .wp-block-quote__citation {
+    text-align: right;
+}
+
+.wp-block-table {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 30px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.wp-block-table td,
+.wp-block-table th {
+    padding: 15px;
+    border-color: transparent;
+}
+
+.wp-block-table thead th,
+.wp-block-table tr th {
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: normal;
+    background-color: #333;
+}
+
+.wp-block-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

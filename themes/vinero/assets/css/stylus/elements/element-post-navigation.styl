@@ -1,0 +1,46 @@
+/*!*********************************/
+/*! Post navigation
+/**********************************/
+
+.vlt-post-navigation
+
+	.prev,
+	.next
+		position fixed
+		top 50%
+		left 0
+
+		z-index 4
+
+		a
+			display inline-flex
+			align-items center
+			justify-content center
+			height 40px
+			width 40px
+			margin-top -20px
+
+			color $c6
+			font-size 14px
+
+			border-radius 0
+			background-color $c0
+
+			transform translateX(-100%)
+
+			&:hover
+				color $c6
+
+				background-color $c1
+
+	.next
+		left auto
+		right 0
+
+		a
+			transform translateX(100%)
+
+	&.is-visible
+		.next a,
+		.prev a
+			transform translateX(0)

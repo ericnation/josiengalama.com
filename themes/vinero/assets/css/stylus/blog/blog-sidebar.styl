@@ -1,0 +1,353 @@
+/*!*********************************/
+/*! Sidebar
+/**********************************/
+
+.vlt-sidebar.vlt-sidebar--right
+	@media (min-width: 768px)
+		padding-left 40px
+
+	@media (max-width: 767px)
+		margin-top 50px
+
+.vlt-sidebar.vlt-sidebar--left
+	@media (min-width: 768px)
+		padding-right 40px
+
+	@media (max-width: 767px)
+		margin-top 50px
+
+/*!*********************************/
+/*! Widget
+/**********************************/
+
+.vlt-widget
+	margin 0
+	padding 0
+	ul
+		margin 0
+		padding 0
+		list-style-type none
+
+	li
+		clear both
+
+	& + .vlt-widget
+		margin-top 50px
+
+	&__title
+		margin 0 0 20px
+		padding 0
+
+.vlt-widget ul li .children
+	margin-left 10px
+
+/*!*********************************/
+/*! Widget list
+/**********************************/
+
+.vlt-widget
+	&.widget_meta,
+	&.widget_pages,
+	&.widget_categories,
+	&.widget_archive,
+	&.widget_recent_comments,
+	&.widget_nav_menu,
+	&.widget_recent_entries
+		ul li
+			line-height 2.4
+
+		ul > li
+			&::before
+				content '▪'
+				margin-right 10px
+
+			ul li
+				&::before
+					content '•'
+
+/*!*********************************/
+/*! Widget RSS
+/**********************************/
+
+.vlt-widget.widget_rss
+	.vlt-widget__title .rsswidget
+		margin-left 2px
+
+	li + li
+		padding-top 30px
+
+	.rss-date
+		display block
+		margin 10px 0
+
+		letter-spacing 1px
+		font-size 12px
+
+	.rsswidget
+		color $c1
+		font-weight 600
+
+		font-size 15px
+
+	cite
+		display block
+		margin-top 10px
+
+/*!*********************************/
+/*! Widget text
+/**********************************/
+
+.vlt-widget
+	.widget_text p:last-child
+		margin-bottom 0
+
+/*!*********************************/
+/*! Widget Recent News
+/**********************************/
+
+.vlt-widget
+	.widget_recent_entries
+
+		.post-date
+			display block
+
+			font-size 10px
+			color $c2
+			letter-spacing 2px
+			text-transform uppercase
+
+/*!*********************************/
+/*! Widget Tag Cloud
+/**********************************/
+
+.vlt-widget.widget_tag_cloud
+	font-size 0px
+	a
+		display inline-flex
+		padding 6px 10px
+		margin 0 5px 5px 0
+
+		font-size 14px !important
+		line-height 1
+		color $c0
+
+		background-color $c8
+		border 1px solid $c11
+
+		&:hover
+			color $c2
+
+/*!*********************************/
+/*! Widget calendar
+/**********************************/
+
+.vlt-widget.widget_calendar
+	tr, td, th
+		padding 8px
+
+		text-align center
+
+	caption
+		padding 0 0 10px
+
+		font-size 15px
+		text-transform uppercase
+		letter-spacing 2px
+
+	#today
+		color $c6
+
+		background-color $c1
+
+/*!*********************************/
+/*! Widget Instagram
+/**********************************/
+
+.vlt-widget.vlt-widget-instagram
+	ul
+		display grid
+		grid-template-columns repeat(4, 1fr)
+		grid-gap 10px
+
+		line-height 0
+		font-size 0
+
+		li
+			overflow hidden
+
+		img
+			max-width 100%
+
+		a
+			display block
+			position relative
+
+			&::after
+				content '\ee14'
+				display flex
+				align-items center
+				justify-content center
+				position absolute
+				top 0
+				left 0
+				height 100%
+				width 100%
+
+				font-family $if
+				color $c6
+				font-size 22px
+
+				opacity 0
+				background-color rgba($c0, 25%)
+				transition()
+
+		a:hover
+			&::after
+				opacity 1
+
+	.vlt-btn
+		margin-top 20px
+
+/*!*********************************/
+/*! Widget subscribe
+/**********************************/
+
+.vlt-widget.vlt-widget-subscribe
+	padding 30px !important
+
+	background-color $c8
+
+	.vlt-widget__title
+		position relative
+		padding-bottom 15px
+		margin-bottom 30px
+
+		text-align center
+		font-size 18px
+
+		&::before
+			content '\efe6'
+			margin-right 5px
+
+			font-family $if
+
+		&::after
+			content ''
+			position absolute
+			bottom 0
+			left 50%
+			width 30px
+			height 2px
+			margin-left -15px
+
+			background-color $c0
+
+	p
+		margin-bottom 20px
+
+	.vlt-btn
+		margin-top 20px
+
+/*!*********************************/
+/*! Widget about
+/**********************************/
+
+.vlt-widget.vlt-widget-about
+
+	.vlt-widget-about__title
+		margin 10px 0 0
+		padding-bottom 10px
+
+		text-transform uppercase
+		font-size 12px
+		letter-spacing 2px
+		font-weight normal
+
+		border-bottom 1px solid $c9
+
+	.vlt-widget-about__content
+		margin-top 10px
+		margin-bottom 0
+
+	.vlt-widget-about__signature
+		margin-top 20px
+
+		line-height 0
+		img
+			max-height 40px
+			width auto
+
+/*!*********************************/
+/*! Widget banner
+/**********************************/
+
+.vlt-widget.vlt-widget-banner
+	a
+		display block
+		font-size 0
+
+/*!*********************************/
+/*! Widget recent news
+/**********************************/
+
+.vlt-widget.vlt-widget-postlist
+	list-style-type none
+
+	li + li
+		margin-top 20px
+
+	.vlt-widget-post
+		display flex
+		align-items center
+		min-height 70px
+
+		&__thumbnail
+			flex-shrink 0
+			position relative
+			width 80px
+
+			line-height 0
+			img
+				width 100%
+				height auto
+
+		&__content
+			padding-left 15px
+
+			h5
+				margin 0
+
+				font-size 14px
+				line-height 1.5
+
+			span
+				display block
+				margin 10px 0 0
+
+				font-size 13px
+				line-height 1
+				color $c10
+
+/*!*********************************/
+/*! Widget socials
+/**********************************/
+
+.vlt-widget-socials a
+	display inline-flex
+	align-items center
+	justify-content center
+	height 34px
+	width 34px
+
+	font-size 12px
+	color $c0
+
+	border-radius 50%
+	background-color $c5
+	&:hover
+		color $c6
+
+		background-color $c0
+
+	& + a
+		margin-left 6px

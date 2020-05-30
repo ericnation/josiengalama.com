@@ -1,0 +1,177 @@
+/*!*********************************/
+/*! Billing fields
+/**********************************/
+
+.vlt-billing-fields-wrap,
+.vlt-create-account,
+.vlt-additional-fields-wrap,
+.vlt-shipping-fields-wrap
+	padding-right 10px
+
+	@media (max-width: 767px)
+		padding-right 0
+
+.vlt-shipping-fields-wrap
+	margin-top 50px
+
+.vlt-create-account .form-row
+	margin-bottom 0
+
+/*!*********************************/
+/*! Payment
+/**********************************/
+
+.vlt-checkout-payment
+
+	.woocommerce-error,
+	.woocommerce-info,
+	.woocommerce-message
+		margin-bottom 0 !important
+
+	ul
+		margin 0 0 20px
+		padding 0
+
+		list-style-type none
+
+		border 1px solid $c8
+		li
+			padding 15px 20px
+
+			border-bottom 1px solid $c8
+			&:last-child
+				border none
+
+			p
+				margin-top 10px
+				margin-bottom 0
+
+			.vlt-custom-radio-label
+				img, a
+					display none
+
+/*!*********************************/
+/*! Review order table
+/**********************************/
+
+.vlt-checkout-review-order-table
+	border 1px solid $c8
+
+	tbody
+		td
+			padding 15px
+
+		tr:nth-child(even)
+			background none
+
+	tfoot
+		margin-top 20px
+
+		tr th,
+		tr td
+			padding 6px 20px
+
+			color $c0
+
+			background none
+
+		tr th
+			font-weight 600
+
+		tr td
+			text-align right
+
+			strong
+				font-weight normal
+
+/*!*********************************/
+/*! Checkout product
+/**********************************/
+
+.vlt-checkout-product
+	display flex
+	align-items center
+	&__thumbnail
+		margin-right 20px
+
+		line-height 0
+		img
+			width 70px
+
+	&__info
+
+		h5
+			margin 0 0 5px
+
+/*!*********************************/
+/*! Order overview
+/**********************************/
+
+.vlt-order-overview
+	display inline-block
+
+	list-style-type none
+
+	border 1px solid $c8
+	li
+		padding 15px 20px
+
+		border-bottom 1px solid $c8
+		&:last-child
+			border none
+
+	strong
+		color $c5
+
+
+/*!*********************************/
+/*! Custom details
+/**********************************/
+
+.vlt-customer-details
+	margin-top 50px
+
+/*!*********************************/
+/*! Order details
+/**********************************/
+
+.vlt-order-details
+	margin-top 50px
+
+	table
+		tbody tr:nth-child(even)
+			background none
+
+		thead th
+			color $c5
+
+			background none
+			border-color $c8
+
+		tbody
+			th
+				font-weight normal
+
+		tr th,
+		tr td
+			padding 15px 20px
+
+			border-bottom 1px solid $c8
+
+		tr th
+			border-left 1px solid $c8
+
+		tr td
+			text-align right
+
+			border-right 1px solid $c8
+
+			strong
+				font-weight normal
+
+		tr:first-child th,
+		tr:first-child td
+			border-top 1px solid $c8
+
+		a:hover
+			text-decoration underline

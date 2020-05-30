@@ -1,0 +1,26 @@
+/*!*********************************/
+/*! Footer widget
+/**********************************/
+
+.vlt-footer--widget
+
+	.vlt-footer__top
+		padding 60px 0
+
+	.vlt-footer__widgets
+
+		> .row > div:nth-child(n+3)
+			@media (max-width: 991px)
+				margin-top 50px
+
+		> .row > div:nth-child(n+1)
+			@media (max-width: 575px)
+				margin-top 50px
+
+		.vlt-widget-about,
+		.vlt-widget-instagram
+			max-width 85%
+
+	@media (max-width: 767px)
+		.vlt-footer__socials
+			margin-top 15px

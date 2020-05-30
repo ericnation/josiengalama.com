@@ -1,0 +1,63 @@
+/*!*********************************/
+/*! Post style masonry
+/**********************************/
+
+.vlt-post--style-masonry
+
+	.vlt-post-thumbnail + .vlt-post-content
+		padding-top 25px
+
+	.vlt-post-content
+
+		.vlt-post-title
+			font-size 18px
+
+		.vlt-post-meta
+			margin-top 15px
+
+			font-size 14px
+
+		.vlt-post-excerpt
+			margin-top 20px
+
+		footer
+			margin-top 25px
+
+	&.format-quote,
+	&.format-link
+		.vlt-post-content
+			header
+				.vlt-post-icon
+					display flex
+					justify-content center
+
+					a
+						display flex
+						align-items center
+						justify-content center
+						height 34px
+						width 34px
+
+						color $c6
+
+						background-color $c0
+						border-radius 50%
+
+			.vlt-post-excerpt
+				margin-top 30px
+
+				blockquote
+					margin 0
+					padding 0 12%
+
+					font-size 18px
+					text-align center
+					&::before
+						display none
+
+				.vlt-post-title
+					text-align center
+
+			footer
+				text-align center
+				color $c10

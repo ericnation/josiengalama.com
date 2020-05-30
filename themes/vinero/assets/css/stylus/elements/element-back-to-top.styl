@@ -1,0 +1,39 @@
+/*!*********************************/
+/*! Back to top
+/**********************************/
+
+.vlt-back-to-top
+	display flex
+	align-items center
+	justify-content center
+	position fixed
+	width 40px
+	height 40px
+	right 25px
+	bottom 25px
+
+	color $c6
+	font-size 14px
+
+	z-index 95
+	background-color $c0
+	border-radius 0
+	transition()
+
+	&:hover
+		color $c6
+		text-decoration none
+
+		background-color $c1
+		i
+			animation animateIconTop 300ms forwards
+
+.vlt-back-to-top.hidden
+	opacity 0
+	visibility hidden
+	transform translateX(20px)
+
+.vlt-back-to-top.visible
+	opacity 1
+	visibility visible
+	transform translateX(0)

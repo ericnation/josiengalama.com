@@ -1,0 +1,38 @@
+/*!*********************************/
+/*! Portfolio slider
+/**********************************/
+
+.vp-portfolio
+
+	&[data-vp-layout="slider"] .vp-portfolio__items-arrow
+		height 40px
+		width 40px
+		margin-top -20px
+
+		font-size 14px
+		line-height 1
+		color $c0
+
+		background-color $c8
+		box-shadow none
+		outline none !important
+
+	&[data-vp-layout="slider"] .vp-portfolio__items-arrow-prev
+		left 20px
+
+	&[data-vp-layout="slider"] .vp-portfolio__items-arrow-next
+		right 20px
+
+	&[data-vp-layout="slider"][data-vp-slider-bullets="true"] .vp-portfolio__items-wrap
+		padding-bottom 40px
+
+	&[data-vp-layout="slider"] .vp-portfolio__items-bullets > span
+		background-color $c9
+		outline none !important
+
+	&[data-vp-layout="slider"] .vp-portfolio__items-bullets > span,
+	&[data-vp-layout="slider"] .vp-portfolio__items-bullets > span:hover
+		opacity 1
+
+	&[data-vp-layout="slider"] .vp-portfolio__items-bullets > span.swiper-pagination-bullet-active
+		background-color $c0

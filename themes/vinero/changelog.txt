@@ -1,0 +1,126 @@
+Version 2.2
+* WordPress 5.0 Supported
+* Fully Gutenberg Supported
+* Added Automatic Install Sliders
+* Added Automatic Updates
+* Fixed Outdated WooCommerce Files
+* Fixed Child Theme
+* Updated vinero.pot File
+* Updated Setup Wizard
+* Updated Demo Content
+* Updated All Premium Plugins
+* Updated Documentation
+* Removed Envato Market from Requirement Plugins
+* Some improvements
+
+Version 2.1.1
+* Fixed Visual Portfolio
+* Some improvements
+
+Version 2.1
+* Fixed phantom symbol in the menus
+* Fixed mobile menu in fullscreen mode
+* Fixed WooCommerce thumbnail size
+* Fixed WooCommerce shipping form
+* Added breadcrumbs to WooCommerce pages
+* Some improvements
+
+Version 2.0
+* Fixed preloader
+* Fixed excerpts method
+* Fixed audio post
+* Fixed theme prefix to 'vlt'
+* Fixed menus
+* Fixed typekit
+* Fixed include font variants
+* Fixed translatable
+* Fixed admin logo
+* Fixed search query
+* Fixed responsive
+* Updated premium plugins
+* Updated WooCommerce files
+* Updated image sizes
+* Updated theme options
+* Updated image sizes
+* Updated translation file
+* Updated sliders
+* Updated theme docs
+* Added editor-style.css
+* Added visual portfolio instead cubeportfolio
+* Added new widgets
+* Added new blog layouts
+* Added dropcap option to editor
+* Added setup wizard
+* Added boxed mode
+* Added single post shortcode
+* Added spacer shortcode
+* Added ads shortcode
+* Added Cart icon to the menu
+* Improved typography
+* Improved blog list shortcode
+* Improved video link shortcode
+* Improved partner logo
+* Improved team member shortcode
+* Improved contact form shortcode
+* Improved google map shortcode
+* Improved collage shortcode
+* Improved single image
+* Improved social share shortcode
+* Improved count to shortcode
+* Improved custom title shortcode
+* Improved js code
+* Improved 404 Page
+* Moved Iconsmind to the plugin
+* Removed contact template
+* Removed blog tempalte
+* Removed portfolio template
+* Removed infinity load
+* Removed animsition
+* Removed unused classes
+* Removed unused shortcodes
+* Removed unused images
+* Replaced Lightcase to Fancybox
+* Some improvements
+
+Version 1.4
+* Added caption to collage shortcode
+* Updated demo import
+* Fixed home urls
+* Some improvements
+
+Version 1.3
+* WP 4.9 ready
+* Added Typekit fonts
+* Added new preloader style
+* Fixed fullscreen menu
+* Fixed primary font
+* Updated Kirki Framework
+* Added new Demo content
+* Updated all premium plugins
+* Fixed responsive
+* Some improvements
+
+Version 1.2.1
+* Fixed Portfolio filter for custom categories
+
+Version 1.2
+* Added new Product gallery
+* WooCommerce 3.0 Supported
+* Updated All premium plugins
+* Fixed WooCommerce Shop
+* Fixed responsive
+* Some improvements
+
+Version 1.1.1
+* Fixed WooCommerce variation
+* Updated All plugins
+* Some improvements
+
+Version 1.1
+* Theme Dashboard
+* Added new demo importer
+* Fixed "Update Cart"
+* Some improvements
+
+Version 1.0
+* Initial Release

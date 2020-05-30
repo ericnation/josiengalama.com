@@ -1,0 +1,133 @@
+/*!*********************************/
+/*! Header fullscreen
+/**********************************/
+
+.vlt-header--fullscreen .vlt-primary-nav
+	display flex
+	align-items center
+	justify-content center
+
+	position fixed
+	top 0
+	left 0
+	width 100%
+	height 100%
+
+	z-index 600
+	background-color $c6
+
+	visibility hidden
+	opacity 0
+	transition()
+
+	&--opened
+		opacity 1
+		visibility visible
+
+	.sf-menu
+
+		li
+			float none
+			display block
+
+			text-align center
+
+		> li
+			padding 5px 0
+
+		> li > a
+			text-transform uppercase
+			font-size 22px
+			letter-spacing 1px
+			color $c2
+			line-height 1.5
+
+		> li:hover > a,
+		> li.current-menu-item > a,
+		> li.sfHover > a
+			color $c0
+
+		// > li.menu-item-has-children > a::after
+		// 	position absolute
+		// 	content '\eb25'
+		// 	display inline-flex
+		// 	margin-left 5px
+
+		// 	font-family $if
+
+		// li.sfHover > a::after
+		// 	content '\eb28'
+
+		.sub-menu
+			position static
+			padding-top 8px
+
+			ul
+				padding-top 0
+
+			// li.menu-item-has-children > a::after
+			// 	position absolute
+			// 	content '\eb25'
+			// 	margin-left 5px
+
+			// 	font-family $if
+
+			li
+				padding 2px 0
+
+			a
+				font-size 13px
+				letter-spacing 1px
+				color $c2
+				line-height 1.7
+
+			li:hover > a,
+			li.current_page_item > a,
+			li.sfHover > a
+				color $c0
+
+.vlt-header--fullscreen .vlt-primary-nav
+
+	#vlt-fullscreen-menu-close
+		position absolute
+		top 40px
+		right 40px
+		.line .inner
+			background-color $c0
+
+	.vlt-header-socials
+		text-align center
+
+	.sf-menu > li
+		opacity 0
+		visibility hidden
+
+	&.vlt-primary-nav--opened .sf-menu > li
+		animation fade-in-up-menu 200ms ease-in-out forwards
+		delay = 0s
+		for num in (1..12)
+			&:nth-child({num})
+				animation-delay delay
+			delay = delay + 150ms
+
+@keyframes fade-in-up-menu
+	from
+		opacity 0
+		visibility hidden
+		transform translateY(20px)
+	to
+		opacity 1
+		visibility visible
+		transform translateY(0)
+
+@media (min-width: 783px)
+	.admin-bar .vlt-header--fullscreen .vlt-primary-nav
+		top 32px !important
+
+@media (max-width: 782px)
+	.admin-bar .vlt-header--fullscreen .vlt-primary-nav
+		top 46px !important
+
+@media (max-width: 600px)
+	.admin-bar .vlt-header--fullscreen .vlt-primary-nav
+		top 0 !important
