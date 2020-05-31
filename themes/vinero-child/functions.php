@@ -29,9 +29,7 @@ add_action(  'wp_enqueue_scripts', 'vinero_child_enqueue_styles' );
 
 # Import ACF
 
-if ( ! VINERO_DEVELOPMENT ) {
-	add_filter( 'acf/settings/show_admin', '__return_true' );
-}
+add_filter( 'acf/settings/show_admin', '__return_true' );
 
 add_action('acf/init', 'my_acf_init');
 function my_acf_init() {

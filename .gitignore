@@ -14,6 +14,7 @@ themes/twentyfourteen
 themes/twentyfifteen
 themes/twentysixteen
 themes/twentyseventeen
+themes/twentynineteen
 themes/twentytwenty
 themes/storefront
 
@@ -28,3 +29,5 @@ upgrade/
 *.vscode
 
 fonts/*
+
+cache/*
