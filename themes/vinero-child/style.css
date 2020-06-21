@@ -5,3 +5,35 @@
 * Template: vinero
 * Version: 2.2
 */
+
+.cta-wrap {
+  display: flex;
+  margin-top: 20px;
+}
+
+.cta-wrap a:first-child {
+  margin-right: 15px;
+}
+
+.blog_hero-title__content {
+  max-width: 830px;
+  padding: 0 75px 75px!important;
+  position: relative;
+  top: -40px;
+}
+
+.no-bg {
+  background-color: transparent!important;
+}
+
+.vlt-hero-title__content h1.blog-hero-title {
+  font-size: 36px;
+}
+
+.intro-title {
+  margin: 40px 0;
+}
+
+.m-b-40 {
+  margin-bottom: 40px;
+}
