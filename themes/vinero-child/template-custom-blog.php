@@ -14,7 +14,8 @@ get_template_part( 'template-parts/page-title/page-title-blog-page', 'hero' );
 	<div class="container">
 		<?php
       while ( have_posts() ) : the_post();
-      get_template_part( 'template-parts/content/content-profile-section' );
+			get_template_part( 'template-parts/content/content-profile-section' );
+			get_template_part( 'template-parts/content/content-recent-posts-categories');
       the_content();
       echo '<div class="clearfix"></div>';
 			endwhile;
