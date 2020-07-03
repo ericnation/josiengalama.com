@@ -19,7 +19,7 @@ $class = $featured_bg_img ? 'vlt-hero-title jarallax' : 'vlt-hero-title';
 
 ?>
 
-<div class="<?php echo vinero_sanitize_class( $class ); ?> flex-column">
+<div class="<?php echo vinero_sanitize_class( $class ); ?> vlt-hero-title--blog flex-column">
 
 	<?php if ( $featured_bg_img && has_post_thumbnail() ) : ?>
 		<?php echo $featured_bg_img ?>

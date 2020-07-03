@@ -13,14 +13,14 @@ $intro_paragraph = get_field( 'intro_paragraph', $post_id ) ?? '';
 ?>
 <div class="row">
   <div class="col-sm-2"></div>
-  <div class="class-sm-8">
+  <div class="col-sm-8">
     <h2 class="intro-title"><?php echo esc_html__( $intro_title ); ?></h2>
   </div>
   <div class="col-sm-2"></div>
 </div>
 <div class="row m-b-40">
   <div class="col-sm-2"></div>
-  <div class="col-sm-2">
+  <div class="col-sm-2 m-b-20">
     <img src="<?php echo esc_url( $profile_image['url'] ); ?>" />
   </div>
   <div class="col-sm-6">

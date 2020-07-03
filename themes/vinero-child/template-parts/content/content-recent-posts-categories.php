@@ -57,12 +57,12 @@ global $post;
               }
               ?>
               <div class="row m-b-20">
-                <div class="col-xs-12 col-sm-6">
-                <?php if ( has_post_thumbnail() ) : ?>
-                  <div class="vlt-post-thumbnail clearfix">
-                    <?php echo vinero_get_post_thumbnail( $format_recent, 'small' ); ?>
-                    <?php get_template_part( 'template-parts/post/particles/particle', 'thumbnail-link' ); ?>
-                  </div>
+                <div class="col-xs-12 col-sm-6 recent-img-col">
+                  <?php if ( has_post_thumbnail() ) : ?>
+                    <div class="vlt-post-thumbnail clearfix">
+                      <?php echo vinero_get_post_thumbnail( $format_recent, 'small' ); ?>
+                      <?php get_template_part( 'template-parts/post/particles/particle', 'thumbnail-link' ); ?>
+                    </div>
                   <?php endif; ?>
                 </div>
                 <div class="col-xs-12 col-sm-6">
@@ -80,9 +80,9 @@ global $post;
     <div class="row m-t-40 m-b-40">
       <div class="col-sm-12 text-center">
         <a
-          href="<?php echo get_site_url() . esc_html( $category->slug ); ?>"
+          href="<?php echo get_site_url() . '/' . esc_html( $category->slug ); ?>"
           class="vlt-btn--sm vlt-btn--rounded vlt-btn vlt-btn--primary">
-          <?php echo esc_html_e( 'View more', 'vinero' ); ?>
+          <?php echo wp_sprintf( '%1$s %2$s %3$s', __( 'View all', 'vinero' ), $category->name , 'posts' ); ?>
         </a>
       </div>
     </div>
